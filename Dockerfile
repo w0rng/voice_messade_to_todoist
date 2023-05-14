@@ -8,7 +8,7 @@ RUN mkdir __pypackages__ &&\
 
 FROM jrottenberg/ffmpeg:4.4-alpine AS FFmpeg
 FROM python:3.11-alpine
-RUN apk update && apk add --no-cache ffmpeg
+RUN apk update && apk add --no-cache ffmpeg flac
 WORKDIR /app
 
 COPY --from=builder /app/__pypackages__/3.11 /pkgs
