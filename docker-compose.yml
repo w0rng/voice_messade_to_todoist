@@ -1,0 +1,9 @@
+version: 3.8
+
+services:
+  app:
+    image: w0rng/voice_message_to_todoist:latest
+    container_name: voice_message_to_todoist
+    restart: unless-stopped
+    env_file:
+      - .env

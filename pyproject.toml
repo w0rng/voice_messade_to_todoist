@@ -1,0 +1,16 @@
+
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "w0rng", email = "work@w0rng.ru"},
+]
+dependencies = [
+    "sentry-sdk>=1.22.2",
+    "SpeechRecognition>=3.10.0",
+    "requests>=2.30.0",
+    "pyTelegramBotAPI>=4.11.0",
+]
+requires-python = ">=3.11"
+license = {text = "MIT"}
